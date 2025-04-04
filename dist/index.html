@@ -8,44 +8,49 @@
   <link rel="stylesheet" href="./output.css">
 </head>
 <body class="bg-gray-900">
-  <nav class="flex justify-center items-center relative text-sm mb-4 ">
-    <div class="border border-gray-600 flex gap-3 p-[1px] rounded-full backdrop-blur-lg fixed top-5 z-[9999]">
-      <a href="#home" class="text-white px-3 py-1">Home</a>
-      <a href="#projects" class="text-white px-3 py-1">Projects</a>
-      <a href="#certifications" class="text-white px-3 py-1">Certifications</a>
-      <a href="#about" class="bg-white rounded-full px-3 py-1">About</a>
+  <nav class="flex justify-center items-center relative text-sm md:text-lg mb-4 ">
+    <div class="border-2 border-gray-600 flex gap-3 p-1 rounded-full backdrop-blur-lg fixed top-5 z-[9999]">
+      <a href="#home" class="text-white rounded-full px-3 py-1 hover:bg-white hover:text-black">Home</a>
+      <a href="#projects" class="text-white rounded-full px-3 py-1 hover:bg-white hover:text-black">Projects</a>
+      <a href="#certifications" class="text-white rounded-full px-3 py-1 hover:bg-white hover:text-black">Certifications</a>
+      <a href="#about" class="text-white rounded-full px-3 py-1 hover:bg-white hover:text-black">About</a>
     </div>
   </nav>
 
-  <section class="min-h-[650px] md:min-h-[650px] max-w-6xl mx-auto grid place-content-center text-white" id="home">
+  <section class="min-h-[750px] md:min-h-[650px] max-w-6xl mx-auto grid place-content-center text-white" id="home">
     <div class="flex flex-col items-center">
 
       <img src="./images/memoji-computer.png" class="h-20">
       <span class="flex justify-center items-center gap-2 border border-gray-600 rounded px-2 text-sm">
         <div class="w-[10px] h-[10px] bg-green-500 rounded-full"></div>
-        coding mode [ ON ]
+        git commit -m 'Progress'
       </span>
 
       <div class="text-center my-5 px-5 space-y-5" >
-        <h1 class="text-5xl font-bold bg-gradient-to-t from-green-700 to-green-50 bg-clip-text text-transparent">
+        <h1 class="text-5xl font-bold bg-gradient-to-t from-red-700 to-red-50 bg-clip-text text-transparent">
           Hitesh Mulwani
         </h1>
+        <section class="max-w-md mb-2">
+          <marquee class="bg-gradient-to-r from-slate-400 to-slate-700 py-4 rounded-lg">
+            <span class="italic text-md font-bold inline-flex items-center gap-2 uppercase text-white">CS/AI Student • Web Developer • Tech Enthusiast</span>
+          </marquee>
+        </section>
         <p class="max-w-md text-neutral-400">
-          Full-Stack Developer | Building responsive web applications with modern technologies
+          Open to collaborations:
         </p>
       </div>
 
-      <div class="flex justify-center gap-2">
+      <div class="flex flex-col justify-center items-center md:flex-row gap-2">
         <a href="https://www.linkedin.com/in/hitesh-mulwani-0b7a372a4/" target="_blank">
           <button class="bg-white text-black px-4 py-2 rounded-lg flex gap-2 items-center hover:cursor-pointer hover:bg-blue-600 hover:text-white ">
             <img src="./icons/linkedin.webp" class="h-6"> 
-            <span class="font-bold text-[16px] ">LinkedIn Profile</span>
+            <span class="font-bold text-[16px] ">Connect on LinkedIn</span>
           </button>
         </a>
         <a href="https://github.com/hitesh-mulwani" target="_blank">
           <button class="bg-white text-black px-4 py-2 rounded-lg flex gap-2 items-center hover:cursor-pointer hover:bg-gray-500 hover:text-white ">
             <img src="./images/github.svg" class="h-6"> 
-            <span class="font-bold text-[16px] ">Github</span>
+            <span class="font-bold text-[16px] ">View GitHub</span>
           </button>
         </a>
       </div>
@@ -57,16 +62,16 @@
     <div class="text-center space-y-3">
       <h3 class="font-bold text-transparent bg-gradient-to-r from-red-300 to-red-700 bg-clip-text uppercase text-sm inline p-2">Development Showcase</h3>
       <h2 class="text-5xl font-bold bg-gradient-to-b from-neutral-50 to-neutral-500 text-transparent bg-clip-text p-2">Featured Projects</h2>
-      <p class="text-neutral-400">Take a look at some of my recent projects.</p>
+      <p class="text-neutral-400">Checkout some of my recent projects</p>
     </div>
   </section>
 
   <main class="grid place-content-center max-w-6xl mx-auto gap-14 mt-10">
-    <div class="flex flex-col  md:flex-row md:gap-5 md:items-center border bg-gray-800 rounded-2xl p-8 md:pb-8 overflow-hidden max-w-[300px] md:max-w-[700px]">
+    <div class="flex flex-col  md:flex-row md:gap-5 md:items-center border bg-gray-800 rounded-2xl p-8 md:pb-8 overflow-hidden max-w-[300px] md:max-w-[700px] hover:drop-shadow-xl hover:drop-shadow-slate-400">
       <div class="space-y-5">
         <div class="border-b border-gray-600 pb-3">
           <h3 class="uppercase text-sm font-bold bg-gradient-to-r from-emerald-300 to-cyan-500 text-transparent bg-clip-text inline tracking-widest">AI-Powered E-Commerce</h3>
-<h2 class="font-bold text-3xl uppercase text-neutral-50">3D T-Shirt Customizer</h2>
+          <h2 class="font-bold text-3xl uppercase text-neutral-50">3D T-Shirt Customizer</h2>
         </div>
         <ul class="text-neutral-400">
           <li class="flex gap-1 items-center"><img src="./icons/check-circle.svg" class="size-5"><span>Ai Image Generation</span></li>
@@ -74,7 +79,7 @@
           <li class="flex gap-1 align-top"><img src="./icons/check-circle.svg" class="size-5"><span>Download and Customize Designs</span></li>
         </ul>
         <a href="https://3d-tshirt-studio.vercel.app/" target="_blank">
-          <button class="text-black bg-white flex gap-1 px-10 py-2 rounded-lg w-full md:w-auto border justify-center items-center hover:bg-emerald-300 hover:cursor-pointer" >Visit Live Site <img src="./icons/arrow-up-right.svg" class="size-5"></button>
+          <button class="text-black bg-white flex gap-1 px-10 py-2 rounded-lg w-full md:w-auto border justify-center items-center hover:bg-red-400 hover:cursor-pointer font-bold" >Visit Live Site <img src="./icons/arrow-up-right.svg" class="size-5"></button>
         </a>
         
       </div>
@@ -83,7 +88,7 @@
     </div>
   </main>
   <main class="grid place-content-center gap-14 mt-10">
-    <div class="flex flex-col  md:flex-row md:items-center md:gap-5 border bg-gray-800 rounded-2xl p-8 md:pb-8 overflow-hidden max-w-[300px] md:max-w-[700px]">
+    <div class="flex flex-col  md:flex-row md:items-center md:gap-5 border bg-gray-800 rounded-2xl p-8 md:pb-8 overflow-hidden max-w-[300px] md:max-w-[700px] hover:drop-shadow-xl hover:drop-shadow-slate-400">
       <div class="space-y-5">
         <div class="border-b border-gray-600 pb-3">
           <h3 class="uppercase text-sm font-bold bg-gradient-to-r from-emerald-300 to-cyan-500 text-transparent bg-clip-text inline tracking-widest">Frontend Development</h3>
@@ -95,7 +100,7 @@
           <li class="flex gap-1 items-center"><img src="./icons/check-circle.svg" class="size-5"><span>Responsive Design</span></li>
         </ul>
         <a href="https://youtube-homepage-demo.vercel.app/" target="_blank">
-          <button class="text-black bg-white flex gap-1 px-10 py-2 rounded-lg w-full md:w-auto border justify-center items-center hover:bg-emerald-300 hover:cursor-pointer" >Visit Live Site <img src="./icons/arrow-up-right.svg" class="size-5"></button>
+          <button class="text-black bg-white flex gap-1 px-10 py-2 rounded-lg w-full md:w-auto border justify-center items-center hover:bg-red-400 hover:cursor-pointer font-bold" >Visit Live Site <img src="./icons/arrow-up-right.svg" class="size-5"></button>
         </a>
         
       </div>
@@ -104,30 +109,17 @@
     </div>
   </main>
 
-  <section class="mt-25 -rotate-[2deg]">
-    <marquee class="bg-gradient-to-l from-emerald-300 to-cyan-300 py-4">
-      <span class="text-md font-bold inline-flex items-center gap-2 uppercase">Passionate Learner <img src="./icons/star.svg" alt="star"></span>
-      <span class="text-md font-bold inline-flex items-center gap-2 uppercase">Hands-On Projects <img src="./icons/star.svg" alt="star"></span>
-      <span class="text-md font-bold inline-flex items-center gap-2 uppercase">Certification Progress <img src="./icons/star.svg" alt="star"></span>
-      <span class="text-md font-bold inline-flex items-center gap-2 uppercase">Emerging Developer <img src="./icons/star.svg" alt="star"></span>
-      <span class="text-md font-bold inline-flex items-center gap-2 uppercase">Tech Enthusiast <img src="./icons/star.svg" alt="star"></span>
-      <span class="text-md font-bold inline-flex items-center gap-2 uppercase">Continuous Growth <img src="./icons/star.svg" alt="star"></span>
-      <span class="text-md font-bold inline-flex items-center gap-2 uppercase">Building Skills Daily <img src="./icons/star.svg" alt="star"></span>
-    </marquee>
-  </section>
-  
-
-  <section class="max-w-6xl mx-auto px-4 mt-20" id="certifications">
+  <section class="max-w-6xl mx-auto px-4 mt-25" id="certifications">
     <div class="text-center space-y-3">
-      <h3 class="font-bold text-transparent bg-gradient-to-r from-red-300 to-red-700 bg-clip-text uppercase text-sm inline p-2">Continuous Learning</h3>
+      <h3 class="font-bold text-transparent bg-gradient-to-r from-red-300 to-red-700 bg-clip-text uppercase text-sm inline p-2">Skill Building</h3>
       <h2 class="text-5xl font-bold bg-gradient-to-b from-neutral-50 to-neutral-500 text-transparent bg-clip-text p-2">Certifications</h2>
-      <p class="text-neutral-400">Professional development through certified courses.</p>
+      <p class="text-neutral-400">Supplementing my education with certifications</p>
     </div>
   </section>
 
-  <div class="mt-10 grid place-content-center mx-10 md:grid-cols-2 lg:grid-cols-2 gap-4">
+  <main class="mt-10 grid place-content-center mx-10 md:grid-cols-2 md:mx-10 lg:grid-cols-2 lg:mx-28 gap-4">
     
-    <div class="border border-gray-600 bg-gray-800 rounded-2xl p-5 md:w-[50px]">
+    <div class="border border-gray-600 bg-gray-800 rounded-2xl p-5 md:w-auto hover:drop-shadow-lg hover:drop-shadow-slate-400">
       <div class="flex align-top gap-2 mb-5">
         <img src="./images/udemy.webp" class="rounded-full size-25 p-0 -mt-3" alt="">
         <div class="space-y-2">
@@ -136,11 +128,11 @@
         </div>
       </div>
       <a href="https://www.udemy.com/certificate/UC-87dd892c-6c9a-4e94-9327-d081295f0e4a/" target="_blank" class="w-full">
-        <button class="text-black bg-white flex gap-1 px-10 py-2 rounded-lg w-full md:w-full border justify-center items-center hover:bg-emerald-300 hover:cursor-pointer mt-5" >Certification Link <img src="./icons/arrow-up-right.svg" class="size-5"></button>
+        <button class="text-black bg-white flex gap-1 px-10 py-2 rounded-lg w-full md:w-full border justify-center items-center hover:bg-purple-500 font-bold hover:cursor-pointer mt-5" >Certification Link <img src="./icons/arrow-up-right.svg" class="size-5"></button>
       </a>
     </div>
 
-    <div class="border border-gray-600 bg-gray-800 rounded-2xl p-5 md:flex md:justify-center">
+    <div class="border border-gray-600 bg-gray-800 rounded-2xl p-5 hover:drop-shadow-lg hover:drop-shadow-slate-400">
       <div class="flex align-top gap-2 mb-5">
         <img src="./images/udemy.webp" class="rounded-full size-25 p-0 -mt-3" alt="">
         <div class="space-y-2">
@@ -149,21 +141,20 @@
         </div>
       </div>
       <a href="https://www.udemy.com/certificate/UC-eaa60255-1767-4bf6-94db-a0b4055a618e/" target="_blank" class="w-full">
-        <button class="text-black bg-white flex gap-1 px-10 py-2 rounded-lg w-full md:w-full border justify-center items-center hover:bg-emerald-300 hover:cursor-pointer mt-5" >Certification Link <img src="./icons/arrow-up-right.svg" class="size-5"></button>
+        <button class="text-black bg-white flex gap-1 px-10 py-2 rounded-lg w-full md:w-full border justify-center items-center hover:bg-purple-500 font-bold hover:cursor-pointer mt-5" >Certification Link <img src="./icons/arrow-up-right.svg" class="size-5"></button>
       </a>
     </div>
-  </div>
+  </main>
 
   <section class="max-w-6xl mx-auto px-4 mt-25" id="about">
     <div class="text-center space-y-3">
       <h3 class="font-bold text-transparent bg-gradient-to-r from-red-300 to-red-700 bg-clip-text uppercase text-sm inline p-2">about me</h3>
-      <h2 class="text-5xl font-bold bg-gradient-to-b from-neutral-50 to-neutral-500 text-transparent bg-clip-text p-2">A Sneak Peak At What I Do</h2>
-      <p class="text-neutral-400">Discover my skills, interests, and professional approach.</p>
+      <h2 class="text-5xl font-bold bg-gradient-to-b from-neutral-50 to-neutral-500 text-transparent bg-clip-text p-2">My Skills & Passions</h2>
     </div>
   </section>
 
-  <main class="mt-10 grid place-content-center mx-10 md:max-w-6xl md:mx-auto grid-cols-1 md:grid-cols-3 gap-4">
-    <div class="border border-gray-600 bg-gray-800 rounded-2xl p-5 pt-5 overflow-hidden">
+  <main class="mt-5 grid place-content-center mx-10 md:max-w-6xl md:mx-10 lg:mx-28 grid-cols-1 md:grid-cols-3 gap-4">
+    <div class="border border-gray-600 bg-gray-800 rounded-2xl p-5 pt-5 overflow-hidden hover:drop-shadow-md hover:drop-shadow-slate-400">
       <div class="space-y-2">
         <div class="flex gap-2 items-center">
           <img src="./icons/star.svg" class="rounded-full bg-emerald-300 p-1" alt="">
@@ -176,7 +167,7 @@
       </div>
     </div>
 
-    <div class="border border-gray-600 bg-gray-800 rounded-2xl p-5 pt-5 overflow-hidden col-span-1 md:col-span-2 text-white text-sm">
+    <div class="border border-gray-600 bg-gray-800 rounded-2xl p-5 pt-5 overflow-hidden col-span-1 md:col-span-2 text-white text-sm hover:drop-shadow-md hover:drop-shadow-slate-400">
       <div class="space-y-2">
         <div class="flex gap-2 items-center">
           <img src="./icons/star.svg" class="rounded-full bg-emerald-300 p-1" alt="">
@@ -209,7 +200,7 @@
       </div>
     </div>
 
-    <div class="border border-gray-600 bg-gray-800 rounded-2xl p-5 pt-5 overflow-hidden  col-span-1 md:col-span-2">
+    <div class="border border-gray-600 bg-gray-800 rounded-2xl p-5 pt-5 overflow-hidden  col-span-1 md:col-span-2 hover:drop-shadow-md hover:drop-shadow-slate-400">
       <div class="space-y-2 mb-2">
         <div class="flex gap-2 items-center">
           <img src="./icons/star.svg" class="rounded-full bg-emerald-300 p-1" alt="">
@@ -224,7 +215,7 @@
       </div>
     </div>
 
-    <div class="border border-gray-600 bg-gray-800 rounded-2xl overflow-hidden h-60">
+    <div class="border border-gray-600 bg-gray-800 rounded-2xl overflow-hidden h-60 hover:drop-shadow-md hover:drop-shadow-slate-400">
       <img src="./images/puneNew.jpeg" class="w-full h-full object-cover" alt="">
     </div>
   </main>
