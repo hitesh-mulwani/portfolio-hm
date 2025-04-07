@@ -8,223 +8,234 @@
   <link rel="stylesheet" href="./output.css">
 </head>
 <body class="bg-gray-900">
-  <nav class="flex justify-center items-center relative text-sm md:text-lg mb-4 ">
-    <div class="border-2 border-gray-600 flex gap-3 p-1 rounded-full backdrop-blur-lg fixed top-5 z-[9999]">
-      <a href="#home" class="text-white rounded-full px-3 py-1 hover:bg-white hover:text-black">Home</a>
-      <a href="#projects" class="text-white rounded-full px-3 py-1 hover:bg-white hover:text-black">Projects</a>
-      <a href="#certifications" class="text-white rounded-full px-3 py-1 hover:bg-white hover:text-black">Certifications</a>
-      <a href="#about" class="text-white rounded-full px-3 py-1 hover:bg-white hover:text-black">About</a>
-    </div>
-  </nav>
-
-  <section class="min-h-[750px] md:min-h-[650px] max-w-6xl mx-auto grid place-content-center text-white" id="home">
-    <div class="flex flex-col items-center">
-
-      <img src="./images/memoji-computer.png" class="h-20">
-      <span class="flex justify-center items-center gap-2 border border-gray-600 rounded px-2 text-sm">
-        <div class="w-[10px] h-[10px] bg-green-500 rounded-full"></div>
-        git commit -m 'Progress'
-      </span>
-
-      <div class="text-center my-5 px-5 space-y-5" >
-        <h1 class="text-5xl font-bold bg-gradient-to-t from-red-700 to-red-50 bg-clip-text text-transparent">
-          Hitesh Mulwani
-        </h1>
-        <section class="max-w-md mb-2">
-          <marquee class="bg-gradient-to-r from-slate-400 to-slate-700 py-4 rounded-lg">
-            <span class="italic text-md font-bold inline-flex items-center gap-2 uppercase text-white">CS/AI Student • Web Developer • Tech Enthusiast</span>
-          </marquee>
-        </section>
-        <p class="max-w-md text-neutral-400">
-          Open to collaborations:
-        </p>
+  <!-- Main container with max-width constraint -->
+  <div class="mx-auto max-w-[1920px]">
+    <nav class="flex justify-center items-center relative text-sm md:text-lg mb-4">
+      <div class="border-2 border-gray-600 flex gap-3 p-1 rounded-full backdrop-blur-lg fixed top-5 z-[9999]">
+        <a href="#home" class="text-white rounded-full px-3 py-1 hover:bg-white hover:text-black">Home</a>
+        <a href="#projects" class="text-white rounded-full px-3 py-1 hover:bg-white hover:text-black">Projects</a>
+        <a href="#certifications" class="text-white rounded-full px-3 py-1 hover:bg-white hover:text-black">Certifications</a>
+        <a href="#about" class="text-white rounded-full px-3 py-1 hover:bg-white hover:text-black">About</a>
       </div>
+    </nav>
 
-      <div class="flex flex-col justify-center items-center md:flex-row gap-2">
-        <a href="https://www.linkedin.com/in/hitesh-mulwani-0b7a372a4/" target="_blank">
-          <button class="bg-white text-black px-4 py-2 rounded-lg flex gap-2 items-center hover:cursor-pointer hover:bg-blue-600 hover:text-white ">
-            <img src="./icons/linkedin.webp" class="h-6"> 
-            <span class="font-bold text-[16px] ">Connect on LinkedIn</span>
-          </button>
-        </a>
-        <a href="https://github.com/hitesh-mulwani" target="_blank">
-          <button class="bg-white text-black px-4 py-2 rounded-lg flex gap-2 items-center hover:cursor-pointer hover:bg-gray-500 hover:text-white ">
-            <img src="./images/github.svg" class="h-6"> 
-            <span class="font-bold text-[16px] ">View GitHub</span>
-          </button>
-        </a>
-      </div>
+    <!-- Hero Section -->
+    <section class="min-h-[calc(100vh-100px)] max-w-6xl mx-auto grid place-content-center text-white px-4 sm:px-6 py-12 md:py-10 lg:py-36" id="home">
+      <div class="flex flex-col items-center">
+        <img src="./images/memoji-computer.png" class="h-16 sm:h-20">
+        <span class="flex justify-center items-center gap-2 border border-gray-600 rounded px-2 text-xs sm:text-sm">
+          <div class="w-[8px] h-[8px] sm:w-[10px] sm:h-[10px] bg-green-500 rounded-full"></div>
+          git commit -m 'Progress'
+        </span>
 
-    </div>
-  </section>
-
-  <section class="max-w-6xl mx-auto px-4" id="projects">
-    <div class="text-center space-y-3">
-      <h3 class="font-bold text-transparent bg-gradient-to-r from-red-300 to-red-700 bg-clip-text uppercase text-sm inline p-2">Development Showcase</h3>
-      <h2 class="text-5xl font-bold bg-gradient-to-b from-neutral-50 to-neutral-500 text-transparent bg-clip-text p-2">Featured Projects</h2>
-      <p class="text-neutral-400">Checkout some of my recent projects</p>
-    </div>
-  </section>
-
-  <main class="grid place-content-center max-w-6xl mx-auto gap-14 mt-10">
-    <div class="flex flex-col  md:flex-row md:gap-5 md:items-center border bg-gray-800 rounded-2xl p-8 md:pb-8 overflow-hidden max-w-[300px] md:max-w-[700px] hover:drop-shadow-xl hover:drop-shadow-slate-400">
-      <div class="space-y-5">
-        <div class="border-b border-gray-600 pb-3">
-          <h3 class="uppercase text-sm font-bold bg-gradient-to-r from-emerald-300 to-cyan-500 text-transparent bg-clip-text inline tracking-widest">AI-Powered E-Commerce</h3>
-          <h2 class="font-bold text-3xl uppercase text-neutral-50">3D T-Shirt Customizer</h2>
+        <div class="text-center my-5 px-5 space-y-5">
+          <h1 class="text-4xl sm:text-5xl font-bold bg-gradient-to-t from-red-700 to-red-50 bg-clip-text text-transparent">
+            Hitesh Mulwani
+          </h1>
+          <section class="max-w-md mb-2">
+            <marquee class="bg-gradient-to-r from-slate-400 to-slate-700 py-3 sm:py-4 rounded-lg">
+              <span class="italic text-sm sm:text-md font-bold inline-flex items-center gap-2 uppercase text-white">CS/AI Student • Web Developer • Tech Enthusiast</span>
+            </marquee>
+          </section>
+          <p class="max-w-md text-neutral-400 text-sm sm:text-base">
+            Open to collaborations:
+          </p>
         </div>
-        <ul class="text-neutral-400">
-          <li class="flex gap-1 items-center"><img src="./icons/check-circle.svg" class="size-5"><span>Ai Image Generation</span></li>
-          <li class="flex gap-1 items-center"><img src="./icons/check-circle.svg" class="size-5"><span>Tshirt Store</span></li>
-          <li class="flex gap-1 align-top"><img src="./icons/check-circle.svg" class="size-5"><span>Download and Customize Designs</span></li>
-        </ul>
-        <a href="https://3d-tshirt-studio.vercel.app/" target="_blank">
-          <button class="text-black bg-white flex gap-1 px-10 py-2 rounded-lg w-full md:w-auto border justify-center items-center hover:bg-red-400 hover:cursor-pointer font-bold" >Visit Live Site <img src="./icons/arrow-up-right.svg" class="size-5"></button>
-        </a>
-        
-      </div>
-      <img src="./images/3dproject.jpg" alt="" class="rounded-xl mt-5 h-32 md:hidden">
-      <img src="./images/3dproject.jpg" alt="" class="hidden md:block md:h-52 md:w-100 md:rounded-xl">
-    </div>
-  </main>
-  <main class="grid place-content-center gap-14 mt-10">
-    <div class="flex flex-col  md:flex-row md:items-center md:gap-5 border bg-gray-800 rounded-2xl p-8 md:pb-8 overflow-hidden max-w-[300px] md:max-w-[700px] hover:drop-shadow-xl hover:drop-shadow-slate-400">
-      <div class="space-y-5">
-        <div class="border-b border-gray-600 pb-3">
-          <h3 class="uppercase text-sm font-bold bg-gradient-to-r from-emerald-300 to-cyan-500 text-transparent bg-clip-text inline tracking-widest">Frontend Development</h3>
-<h2 class="font-bold text-3xl uppercase text-neutral-50">YouTube Interface Clone</h2>
-        </div>
-        <ul class="text-neutral-500">
-          <li class="flex gap-1 items-center"><img src="./icons/check-circle.svg" class="size-5"><span>Youtube Videos</span></li>
-          <li class="flex gap-1 items-center"><img src="./icons/check-circle.svg" class="size-5"><span>Yt-Shorts Section</span></li>
-          <li class="flex gap-1 items-center"><img src="./icons/check-circle.svg" class="size-5"><span>Responsive Design</span></li>
-        </ul>
-        <a href="https://youtube-homepage-demo.vercel.app/" target="_blank">
-          <button class="text-black bg-white flex gap-1 px-10 py-2 rounded-lg w-full md:w-auto border justify-center items-center hover:bg-red-400 hover:cursor-pointer font-bold" >Visit Live Site <img src="./icons/arrow-up-right.svg" class="size-5"></button>
-        </a>
-        
-      </div>
-      <img src="./images/ytmd.png" alt="" class="rounded-xl mt-5  h-32 object-fill md:hidden">
-      <img src="./images/ytmd.png" alt="" class="hidden md:block md:h-52 md:w-100 md:rounded-xl ">
-    </div>
-  </main>
 
-  <section class="max-w-6xl mx-auto px-4 mt-25" id="certifications">
-    <div class="text-center space-y-3">
-      <h3 class="font-bold text-transparent bg-gradient-to-r from-red-300 to-red-700 bg-clip-text uppercase text-sm inline p-2">Skill Building</h3>
-      <h2 class="text-5xl font-bold bg-gradient-to-b from-neutral-50 to-neutral-500 text-transparent bg-clip-text p-2">Certifications</h2>
-      <p class="text-neutral-400">Supplementing my education with certifications</p>
-    </div>
-  </section>
-
-  <main class="mt-10 grid place-content-center mx-10 md:grid-cols-2 md:mx-10 lg:grid-cols-2 lg:mx-28 gap-4">
-    
-    <div class="border border-gray-600 bg-gray-800 rounded-2xl p-5 md:w-auto hover:drop-shadow-lg hover:drop-shadow-slate-400">
-      <div class="flex align-top gap-2 mb-5">
-        <img src="./images/udemy.webp" class="rounded-full size-25 p-0 -mt-3" alt="">
-        <div class="space-y-2">
-          <h3 class="text-lg font-bold text-white">The Basics of Linux Command Line</h3>
-          <h4 class="text-sm text-neutral-400">Pragmatic Programmer</h4>
+        <div class="flex flex-col justify-center items-center md:flex-row gap-2">
+          <a href="https://www.linkedin.com/in/hitesh-mulwani-0b7a372a4/" target="_blank">
+            <button class="bg-white text-black px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg flex gap-2 items-center hover:cursor-pointer hover:bg-blue-600 hover:text-white text-sm sm:text-base">
+              <img src="./icons/linkedin.webp" class="h-5 sm:h-6"> 
+              <span class="font-bold">Connect on LinkedIn</span>
+            </button>
+          </a>
+          <a href="https://github.com/hitesh-mulwani" target="_blank">
+            <button class="bg-white text-black px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg flex gap-2 items-center hover:cursor-pointer hover:bg-gray-500 hover:text-white text-sm sm:text-base">
+              <img src="./images/github.svg" class="h-5 sm:h-6"> 
+              <span class="font-bold">View GitHub</span>
+            </button>
+          </a>
         </div>
       </div>
-      <a href="https://www.udemy.com/certificate/UC-87dd892c-6c9a-4e94-9327-d081295f0e4a/" target="_blank" class="w-full">
-        <button class="text-black bg-white flex gap-1 px-10 py-2 rounded-lg w-full md:w-full border justify-center items-center hover:bg-purple-500 font-bold hover:cursor-pointer mt-5" >Certification Link <img src="./icons/arrow-up-right.svg" class="size-5"></button>
-      </a>
-    </div>
+    </section>
 
-    <div class="border border-gray-600 bg-gray-800 rounded-2xl p-5 hover:drop-shadow-lg hover:drop-shadow-slate-400">
-      <div class="flex align-top gap-2 mb-5">
-        <img src="./images/udemy.webp" class="rounded-full size-25 p-0 -mt-3" alt="">
-        <div class="space-y-2">
-          <h3 class="text-lg font-bold text-white">Git for Beginners</h3>
-          <h4 class="text-sm text-neutral-400">Thomas Claudius Huber</h4>
+    <!-- Projects Section -->
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 py-12 md:py-16 lg:py-20" id="projects">
+      <div class="text-center space-y-3">
+        <h3 class="font-bold text-transparent bg-gradient-to-r from-red-300 to-red-700 bg-clip-text uppercase text-xs sm:text-sm inline p-2">Development Showcase</h3>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold bg-gradient-to-b from-neutral-50 to-neutral-500 text-transparent bg-clip-text p-2">Featured Projects</h2>
+        <p class="text-neutral-400 text-sm sm:text-base">Checkout some of my recent projects</p>
+      </div>
+
+      <main class="grid place-content-center max-w-6xl mx-auto gap-14 mt-10">
+        <div class="flex flex-col  md:flex-row md:gap-5 md:items-center border bg-gray-800 rounded-2xl p-8 md:pb-8 overflow-hidden max-w-[300px] md:max-w-[700px] hover:drop-shadow-xl hover:drop-shadow-slate-400">
+          <div class="space-y-5">
+            <div class="border-b border-gray-600 pb-3">
+              <h3 class="uppercase text-sm font-bold bg-gradient-to-r from-emerald-300 to-cyan-500 text-transparent bg-clip-text inline tracking-widest">AI-Powered E-Commerce</h3>
+              <h2 class="font-bold text-3xl uppercase text-neutral-50">3D T-Shirt Customizer</h2>
+            </div>
+            <ul class="text-neutral-400">
+              <li class="flex gap-1 items-center"><img src="./icons/check-circle.svg" class="size-5"><span>Ai Image Generation</span></li>
+              <li class="flex gap-1 items-center"><img src="./icons/check-circle.svg" class="size-5"><span>Tshirt Store</span></li>
+              <li class="flex gap-1 align-top"><img src="./icons/check-circle.svg" class="size-5"><span>Download and Customize Designs</span></li>
+            </ul>
+            <a href="https://3d-tshirt-studio.vercel.app/" target="_blank">
+              <button class="text-black bg-white flex gap-1 px-10 py-2 rounded-lg w-full md:w-auto border justify-center items-center hover:bg-red-400 hover:cursor-pointer font-bold" >Visit Live Site <img src="./icons/arrow-up-right.svg" class="size-5"></button>
+            </a>
+            
+          </div>
+          <img src="./images/3dproject.jpg" alt="" class="rounded-xl mt-5 h-32 md:hidden">
+          <img src="./images/3dproject.jpg" alt="" class="hidden md:block md:h-52 md:w-100 md:rounded-xl">
+        </div>
+      </main>
+      <main class="grid place-content-center gap-14 mt-10">
+        <div class="flex flex-col  md:flex-row md:items-center md:gap-5 border bg-gray-800 rounded-2xl p-8 md:pb-8 overflow-hidden max-w-[300px] md:max-w-[700px] hover:drop-shadow-xl hover:drop-shadow-slate-400">
+          <div class="space-y-5">
+            <div class="border-b border-gray-600 pb-3">
+              <h3 class="uppercase text-sm font-bold bg-gradient-to-r from-emerald-300 to-cyan-500 text-transparent bg-clip-text inline tracking-widest">Frontend Development</h3>
+    <h2 class="font-bold text-3xl uppercase text-neutral-50">YouTube Interface Clone</h2>
+            </div>
+            <ul class="text-neutral-500">
+              <li class="flex gap-1 items-center"><img src="./icons/check-circle.svg" class="size-5"><span>Youtube Videos</span></li>
+              <li class="flex gap-1 items-center"><img src="./icons/check-circle.svg" class="size-5"><span>Yt-Shorts Section</span></li>
+              <li class="flex gap-1 items-center"><img src="./icons/check-circle.svg" class="size-5"><span>Responsive Design</span></li>
+            </ul>
+            <a href="https://youtube-homepage-demo.vercel.app/" target="_blank">
+              <button class="text-black bg-white flex gap-1 px-10 py-2 rounded-lg w-full md:w-auto border justify-center items-center hover:bg-red-400 hover:cursor-pointer font-bold" >Visit Live Site <img src="./icons/arrow-up-right.svg" class="size-5"></button>
+            </a>
+            
+          </div>
+          <img src="./images/ytmd.png" alt="" class="rounded-xl mt-5  h-32 object-fill md:hidden">
+          <img src="./images/ytmd.png" alt="" class="hidden md:block md:h-52 md:w-100 md:rounded-xl ">
+        </div>
+      </main>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 py-12 md:py-16 lg:py-20" id="certifications">
+      <div class="text-center space-y-3">
+        <h3 class="font-bold text-transparent bg-gradient-to-r from-red-300 to-red-700 bg-clip-text uppercase text-xs sm:text-sm inline p-2">Skill Building</h3>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold bg-gradient-to-b from-neutral-50 to-neutral-500 text-transparent bg-clip-text p-2">Certifications</h2>
+        <p class="text-neutral-400 text-sm sm:text-base">Supplementing my education with certifications</p>
+      </div>
+
+      <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4 px-4 sm:px-0">
+        <!-- Certification 1 -->
+        <div class="border border-gray-600 bg-gray-800 rounded-2xl p-5 hover:drop-shadow-lg hover:drop-shadow-slate-400">
+          <div class="flex align-top gap-2 mb-5">
+            <img src="./images/udemy.webp" class="rounded-full size-20 p-0 -mt-3" alt="Udemy">
+            <div class="space-y-2">
+              <h3 class="text-base sm:text-lg font-bold text-white">The Basics of Linux Command Line</h3>
+              <h4 class="text-xs sm:text-sm text-neutral-400">Pragmatic Programmer</h4>
+            </div>
+          </div>
+          <a href="https://www.udemy.com/certificate/UC-87dd892c-6c9a-4e94-9327-d081295f0e4a/" target="_blank" class="w-full">
+            <button class="text-black bg-white flex gap-1 px-6 sm:px-10 py-1.5 sm:py-2 rounded-lg w-full border justify-center items-center hover:bg-purple-500 font-bold hover:cursor-pointer mt-5 text-sm sm:text-base">Certification Link <img src="./icons/arrow-up-right.svg" class="size-4 sm:size-5"></button>
+          </a>
+        </div>
+
+        <!-- Certification 2 -->
+        <div class="border border-gray-600 bg-gray-800 rounded-2xl p-5 hover:drop-shadow-lg hover:drop-shadow-slate-400">
+          <div class="flex align-top gap-2 mb-5">
+            <img src="./images/udemy.webp" class="rounded-full size-20 p-0 -mt-3" alt="Udemy">
+            <div class="space-y-2">
+              <h3 class="text-base sm:text-lg font-bold text-white">Git for Beginners</h3>
+              <h4 class="text-xs sm:text-sm text-neutral-400">Thomas Claudius Huber</h4>
+            </div>
+          </div>
+          <a href="https://www.udemy.com/certificate/UC-eaa60255-1767-4bf6-94db-a0b4055a618e/" target="_blank" class="w-full">
+            <button class="text-black bg-white flex gap-1 px-6 sm:px-10 py-1.5 sm:py-2 rounded-lg w-full border justify-center items-center hover:bg-purple-500 font-bold hover:cursor-pointer mt-5 text-sm sm:text-base">Certification Link <img src="./icons/arrow-up-right.svg" class="size-4 sm:size-5"></button>
+          </a>
         </div>
       </div>
-      <a href="https://www.udemy.com/certificate/UC-eaa60255-1767-4bf6-94db-a0b4055a618e/" target="_blank" class="w-full">
-        <button class="text-black bg-white flex gap-1 px-10 py-2 rounded-lg w-full md:w-full border justify-center items-center hover:bg-purple-500 font-bold hover:cursor-pointer mt-5" >Certification Link <img src="./icons/arrow-up-right.svg" class="size-5"></button>
-      </a>
-    </div>
-  </main>
+    </section>
 
-  <section class="max-w-6xl mx-auto px-4 mt-25" id="about">
-    <div class="text-center space-y-3">
-      <h3 class="font-bold text-transparent bg-gradient-to-r from-red-300 to-red-700 bg-clip-text uppercase text-sm inline p-2">about me</h3>
-      <h2 class="text-5xl font-bold bg-gradient-to-b from-neutral-50 to-neutral-500 text-transparent bg-clip-text p-2">My Skills & Passions</h2>
-    </div>
-  </section>
+    <!-- About Section -->
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 py-12 md:py-16 lg:py-20" id="about">
+      <div class="text-center space-y-3">
+        <h3 class="font-bold text-transparent bg-gradient-to-r from-red-300 to-red-700 bg-clip-text uppercase text-xs sm:text-sm inline p-2">about me</h3>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold bg-gradient-to-b from-neutral-50 to-neutral-500 text-transparent bg-clip-text p-2">My Skills & Passions</h2>
+      </div>
 
-  <main class="mt-5 grid place-content-center mx-10 md:max-w-6xl md:mx-10 lg:mx-28 grid-cols-1 md:grid-cols-3 gap-4">
-    <div class="border border-gray-600 bg-gray-800 rounded-2xl p-5 pt-5 overflow-hidden hover:drop-shadow-md hover:drop-shadow-slate-400">
-      <div class="space-y-2">
-        <div class="flex gap-2 items-center">
-          <img src="./icons/star.svg" class="rounded-full bg-emerald-300 p-1" alt="">
-          <h3 class="text-lg font-bold text-white">My Reads</h3>
+      <div class="mt-8 mx-5 md:mx-0 grid grid-cols-1 md:grid-cols-3 gap-4">
+        <!-- My Reads Card -->
+        <div class="border border-gray-600 bg-gray-800 rounded-2xl p-5 pt-5 overflow-hidden hover:drop-shadow-md hover:drop-shadow-slate-400">
+          <div class="space-y-2">
+            <div class="flex gap-2 items-center">
+              <img src="./icons/star.svg" class="rounded-full bg-emerald-300 p-1 size-6" alt="Star">
+              <h3 class="text-base sm:text-lg font-bold text-white">My Reads</h3>
+            </div>
+            <p class="text-xs sm:text-sm text-neutral-400">Explore the books shaping my perspectives.</p>
+          </div>
+          <div class="flex justify-center">
+            <img src="./images/book-cover.png" class="h-36 sm:h-44 mt-4" alt="Book Cover">
+          </div>
         </div>
-        <p class="text-sm text-neutral-400">Explore the books shaping my perspectives.</p>
-      </div>
-      <div class="flex justify-center">
-        <img src="./images/book-cover.png" class="h-44 mt-4">
-      </div>
-    </div>
 
-    <div class="border border-gray-600 bg-gray-800 rounded-2xl p-5 pt-5 overflow-hidden col-span-1 md:col-span-2 text-white text-sm hover:drop-shadow-md hover:drop-shadow-slate-400">
-      <div class="space-y-2">
-        <div class="flex gap-2 items-center">
-          <img src="./icons/star.svg" class="rounded-full bg-emerald-300 p-1" alt="">
-          <h3 class="text-lg font-bold text-white">My Toolbox</h3>
+        <!-- My Toolbox Card -->
+        <div class="border border-gray-600 bg-gray-800 rounded-2xl p-5 pt-5 overflow-hidden md:col-span-2 text-white text-sm hover:drop-shadow-md hover:drop-shadow-slate-400">
+          <div class="space-y-2">
+            <div class="flex gap-2 items-center">
+              <img src="./icons/star.svg" class="rounded-full bg-emerald-300 p-1 size-6" alt="Star">
+              <h3 class="text-base sm:text-lg font-bold text-white">My Toolbox</h3>
+            </div>
+            <p class="text-xs sm:text-sm text-neutral-400">Technologies and tools I use to create projects.</p>
+          </div>
+          <div class="mt-4">
+            <h4 class="text-xs text-neutral-500 mb-1">Frontend</h4>
+            <div class="flex flex-wrap gap-2 mb-3">
+              <span class="border border-gray-600 bg-gray-900 rounded-lg p-1.5 text-xs sm:text-sm">React</span>
+              <span class="border border-gray-600 bg-gray-900 rounded-lg p-1.5 text-xs sm:text-sm">Tailwind CSS</span>
+              <span class="border border-gray-600 bg-gray-900 rounded-lg p-1.5 text-xs sm:text-sm">HTML5</span>
+              <span class="border border-gray-600 bg-gray-900 rounded-lg p-1.5 text-xs sm:text-sm">CSS3</span>
+              <span class="border border-gray-600 bg-gray-900 rounded-lg p-1.5 text-xs sm:text-sm">JavaScript</span>
+            </div>
+            
+            <h4 class="text-xs text-neutral-500 mb-1">Backend</h4>
+            <div class="flex flex-wrap gap-2 mb-3">
+              <span class="border border-gray-600 bg-gray-900 rounded-lg p-1.5 text-xs sm:text-sm">Node.js</span>
+              <span class="border border-gray-600 bg-gray-900 rounded-lg p-1.5 text-xs sm:text-sm">Express</span>
+            </div>
+            
+            <h4 class="text-xs text-neutral-500 mb-1">Other</h4>
+            <div class="flex flex-wrap gap-2">
+              <span class="border border-gray-600 bg-gray-900 rounded-lg p-1.5 text-xs sm:text-sm">Git</span>
+              <span class="border border-gray-600 bg-gray-900 rounded-lg p-1.5 text-xs sm:text-sm">Github</span>
+              <span class="border border-gray-600 bg-gray-900 rounded-lg p-1.5 text-xs sm:text-sm">Java</span>
+            </div>
+          </div>
         </div>
-        <p class="text-sm text-neutral-400">Technologies and tools I use to create projects.</p>
-      </div>
-      <div class="mt-4">
-        <h4 class="text-xs text-neutral-500 mb-1">Frontend</h4>
-        <div class="flex flex-wrap gap-2 mb-3">
-          <span class="border border-gray-600 bg-gray-900 rounded-lg p-2">React</span>
-          <span class="border border-gray-600 bg-gray-900 rounded-lg p-2">Tailwind CSS</span>
-          <span class="border border-gray-600 bg-gray-900 rounded-lg p-2">HTML5</span>
-          <span class="border border-gray-600 bg-gray-900 rounded-lg p-2">CSS3</span>
-          <span class="border border-gray-600 bg-gray-900 rounded-lg p-2">JavaScript</span>
-        </div>
-        
-        <h4 class="max-w-6xl mx-auto text-xs text-neutral-500 mb-1">Backend</h4>
-        <div class="flex flex-wrap gap-2 mb-3">
-          <span class="border border-gray-600 bg-gray-900 rounded-lg p-2">Node.js</span>
-          <span class="border border-gray-600 bg-gray-900 rounded-lg p-2">Express</span>
-        </div>
-        
-        <h4 class="text-xs text-neutral-500 mb-1">Other</h4>
-        <div class="flex flex-wrap gap-2">
-          <span class="border border-gray-600 bg-gray-900 rounded-lg p-2">Git</span>
-          <span class="border border-gray-600 bg-gray-900 rounded-lg p-2">Github</span>
-          <span class="border border-gray-600 bg-gray-900 rounded-lg p-2">Java</span>
-        </div>
-      </div>
-    </div>
 
-    <div class="border border-gray-600 bg-gray-800 rounded-2xl p-5 pt-5 overflow-hidden  col-span-1 md:col-span-2 hover:drop-shadow-md hover:drop-shadow-slate-400">
-      <div class="space-y-2 mb-2">
-        <div class="flex gap-2 items-center">
-          <img src="./icons/star.svg" class="rounded-full bg-emerald-300 p-1" alt="">
-          <h3 class="text-lg font-bold text-white">Beyond the code</h3>
+        <!-- Beyond the Code Card -->
+        <div class="border border-gray-600 bg-gray-800 rounded-2xl p-5 pt-5 overflow-hidden md:col-span-2 hover:drop-shadow-md hover:drop-shadow-slate-400">
+          <div class="space-y-2 mb-2">
+            <div class="flex gap-2 items-center">
+              <img src="./icons/star.svg" class="rounded-full bg-emerald-300 p-1 size-6" alt="Star">
+              <h3 class="text-base sm:text-lg font-bold text-white">Beyond the code</h3>
+            </div>
+            <p class="text-xs sm:text-sm text-neutral-400">Hobbies and passions.</p>
+          </div>
+          <div class="flex flex-wrap justify-start text-white text-xs sm:text-sm gap-2">
+            <span class="border border-gray-600 bg-gray-900 rounded-lg p-1.5">Reading</span>
+            <span class="border border-gray-600 bg-gray-900 rounded-lg p-1.5">Cooking</span>
+            <span class="border border-gray-600 bg-gray-900 rounded-lg p-1.5">Learning About Business</span>
+          </div>
         </div>
-        <p class="text-sm text-neutral-400">Hobbies and passions.</p>
-      </div>
-      <div class="flex flex-wrap justify-start text-white text-sm gap-2">
-        <span class="border border-gray-600 bg-gray-900 rounded-lg p-2">Reading</span>
-        <span class="border border-gray-600 bg-gray-900 rounded-lg p-2">Cooking</span>
-        <span class="border border-gray-600 bg-gray-900 rounded-lg p-2">Learning About Business</span>
-      </div>
-    </div>
 
-    <div class="border border-gray-600 bg-gray-800 rounded-2xl overflow-hidden h-60 hover:drop-shadow-md hover:drop-shadow-slate-400">
-      <img src="./images/puneNew.jpeg" class="w-full h-full object-cover" alt="">
-    </div>
-  </main>
+        <!-- Image Card -->
+        <div class="border border-gray-600 bg-gray-800 rounded-2xl overflow-hidden h-48 sm:h-60 hover:drop-shadow-md hover:drop-shadow-slate-400">
+          <img src="./images/puneNew.jpeg" class="w-full h-full object-cover" alt="Pune">
+        </div>
+      </div>
+    </section>
 
-  <footer class="max-w-8xl mx-auto px-4 mt-25 border-t border-gray-600 text-sm">
-    <div class="flex flex-col justify-between items-center gap-2 py-5">
-      <p class="text-gray-600">&copy; 2025. All rights reserved</p>
-      <p class="text-gray-600">Made with &hearts; by Hitesh Mulwani</p>
-    </div>
-  </footer>
+    <!-- Footer -->
+    <footer class="max-w-6xl mx-auto px-4 sm:px-6 border-t border-gray-600 text-xs sm:text-sm mt-12 md:mt-16 lg:mt-20">
+      <div class="flex flex-col justify-between items-center gap-2 py-5">
+        <p class="text-gray-600">&copy; 2025. All rights reserved</p>
+        <p class="text-gray-600">Made with &hearts; by Hitesh Mulwani</p>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>
